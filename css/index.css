@@ -105,9 +105,9 @@ ul{
 #main{
     width: 100%;
     height: 100vh;
-    background-color: red;
     position: relative;
     overflow: hidden;
+    background-color: var(--dark-blue);
 
 }
 .main-circle-background{
@@ -472,7 +472,7 @@ ul{
 /* comments Start */
 #comments{
     width: 100%;
-    background: var(--dark-blue);
+    background: blue;
 
 }
 .comments-container{
