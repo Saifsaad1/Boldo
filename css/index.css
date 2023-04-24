@@ -107,6 +107,7 @@ ul{
     height: 100vh;
     position: relative;
     overflow: hidden;
+    background-color: var(--dark-blue);
 
 }
 .main-circle-background{
@@ -120,7 +121,7 @@ ul{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    color: #000;
+    color: #fff;
     position: relative;
     padding: 0 6em 0 6em;
 
@@ -583,6 +584,7 @@ ul{
 #about{
     width: 100%;
     overflow: hidden;
+    background-color: red;
 
 }
 .about-container{
