@@ -283,6 +283,7 @@ ul{
     font-size: 20px;
     font-family: var(--open-sans);
     margin: 0;
+    color:red;
 }
 .services-text{
     margin-top: 20px;
