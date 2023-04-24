@@ -283,11 +283,11 @@ ul{
     font-size: 20px;
     font-family: var(--open-sans);
     margin: 0;
-    color:red;
 }
 .services-text{
     margin-top: 20px;
     font-size: 48px;
+    color:red;
     font-family: var(--manrope);
 }
 .services-cards{
