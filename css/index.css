@@ -471,8 +471,8 @@ ul{
 
 /* comments Start */
 #comments{
-    
     width: 100%;
+    background-color: var(--dark-blue);
 
 }
 .comments-container{
