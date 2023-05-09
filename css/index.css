@@ -941,7 +941,6 @@ ul {
 .contact-email {
     width: 370px;
     height: 56px;
-    margin-top: 1.5em;
     border-radius: 240px;
     outline: none;
     border: none;
@@ -1431,7 +1430,6 @@ ul {
     .contact-email {
         width: 310px;
         height: 52px;
-        margin-top: 1.5em;
     }
 
     .contact-email::placeholder {
@@ -1822,7 +1820,6 @@ ul {
     .contact-email {
         width: 310px;
         height: 52px;
-        margin-top: 1.5em;
     }
 
     .contact-email::placeholder {
@@ -2017,7 +2014,6 @@ ul {
 .contact-email {
     width: 260px;
     height: 52px;
-    margin-top: 1.5em;
 }
 
 .contact-email::placeholder {
