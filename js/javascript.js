@@ -7,6 +7,7 @@ let aboutArrow = document.querySelector('.about-arrow');
 let aboutHiddenText = document.querySelector('.about-hidden-text');
 let aboutArrow2 = document.querySelector('.about-arrow-2');
 let aboutHiddenText2 = document.querySelector('.about-hidden-text-2');
+let contactEmail = document.querySelector('.contact-email');
 let a241 = document.querySelector('.a241');
 
 hum.onclick = function(){
