@@ -954,11 +954,26 @@ ul {
     font-family: var(--open-sans);
     color: #000;
     word-spacing: 1px;
+    transition: all 0.2s ease;
 }
 
 .contact-email:focus {
     border: 5px solid var(--green);
 }
+
+.forma-name {
+    position: absolute;
+    color: transparent;
+    margin-left: 36.5px;
+    font-size: 20px;
+    word-spacing: 1px;
+    font-family: var(--open-sans);
+    transition: all 0.3s;
+    color: transparent;
+    margin-top: 12px;
+    z-index: -99;
+}
+
 
 .contact-submit {
     width: 210px;
@@ -980,6 +995,115 @@ ul {
     background-color: var(--dark-blue);
     color: var(--green);
     border: 2px solid var(--green);
+}
+
+
+.contact-email:focus::placeholder {
+    color: transparent;
+}
+
+/* contact End */
+
+/* footer Start */
+#footer {
+    width: 100%;
+    height: 100%;
+    margin-top: 7em;
+}
+
+.footer-container {
+    width: 100%;
+    height: 100%;
+    padding: 1em 6em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.footer-main {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
+
+.footer-logo {
+    width: 156px;
+}
+
+.footer-main-txt {
+    font-family: var(--open-sans);
+    font-size: 16px;
+    line-height: 28px;
+    color: #777777;
+    word-spacing: 1px;
+    margin-top: 40px;
+    margin-bottom: 0;
+}
+
+.footer-main small {
+    font-family: var(--open-sans);
+    font-size: 16px;
+    line-height: 28px;
+    color: #777777;
+    margin-top: 40px;
+}
+
+.footer-second {
+    width: 55%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+}
+
+.footer-lines {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 12px;
+}
+
+.footer-line {
+    font-size: 20px;
+    font-family: var(--open-sans);
+    color: #777777;
+}
+
+.footer-line-1 {
+    font-size: 20px;
+    font-weight: 400;
+    font-family: var(--open-sans);
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 1.2em;
+}
+
+.footer-line-2:hover a,
+.footer-line-3:hover a,
+.footer-line-4:hover a {
+    color: #393939;
+}
+.footer-line-career{
+    display: flex;
+    align-items: center;
+}
+
+.hiring {
+    width: 72px;
+    height: 30px;
+    background: var(--green);
+    border: none;
+    border-radius: 120px;
+    font-size: 13px;
+    font-family: var(--open-sans);
+    font-weight: bold;
+    color: var(--dark-blue);
+    margin-left: 7px;
+    transition: all 0.2s;
+}
+
+.hiring:hover {
+    background: var(--dark-blue);
+    color: var(--green);
 }
 
 /* For Screen Size More Than 1200px (1201px - infinity) */
@@ -1011,6 +1135,20 @@ ul {
         margin-top: 0;
         display: flex;
         gap: 20px;
+    }
+
+    .contact-email:focus~.forma-name {
+        color: var(--green);
+        font-size: 16px;
+        transform: translateY(-32px);
+        z-index: unset;
+    }
+
+    .contact-email:focus::placeholder {
+        color: transparent;
+        font-size: 16px;
+        transform: translateY(-32px);
+        color: var(--green);
     }
 }
 
@@ -1160,6 +1298,18 @@ ul {
 
     .contact-details {
         width: 80%;
+    }
+
+    .footer-container {
+        padding: 1em 4em;
+    }
+
+    .footer-main {
+        width: 30%;
+    }
+
+    .footer-second {
+        width: 60%;
     }
 }
 
@@ -1442,6 +1592,46 @@ ul {
         height: 54px;
         margin-left: 1.3em;
         font-size: 19px;
+    }
+
+    .footer-container {
+        padding: 1em 3em;
+    }
+
+    .footer-main {
+        width: 32%;
+    }
+
+    .footer-second {
+        width: 62%;
+    }
+
+    .footer-logo {
+        width: 130px;
+    }
+
+    .footer-main-txt {
+        font-size: 15px;
+        margin-top: 30px;
+    }
+
+    .footer-main small {
+        font-size: 15px;
+        margin-top: 30px;
+    }
+
+    .footer-line {
+        font-size: 16px;
+    }
+
+    .footer-line-1 {
+        font-size: 16px;
+    }
+
+    .hiring {
+        width: 55px;
+        height: 20px;
+        font-size: 10px;
     }
 }
 
@@ -1797,9 +1987,10 @@ ul {
         padding: 1em 2em;
 
     }
+
     .contact-container {
-         width: 100%;
-         height: 420px;
+        width: 100%;
+        height: 420px;
     }
 
 
@@ -1811,7 +2002,8 @@ ul {
         font-size: 25px;
         line-height: 45px;
     }
-    .forma{
+
+    .forma {
         flex-direction: column;
         align-items: center;
         gap: 25px;
@@ -1833,8 +2025,53 @@ ul {
         margin-left: 0;
         font-size: 19px;
     }
+    #footer{
+        margin-top: 3em;
+    }
+    .footer-container {
+        padding: 1em 2em;
+    }
 
-    
+    .footer-main {
+        width: 32%;
+    }
+
+    .footer-second {
+        width: 62%;
+    }
+
+    .footer-logo {
+        width: 100px;
+    }
+
+    .footer-main-txt {
+        font-size: 12px;
+        line-height: 20px;
+        margin-top: 20px;
+    }
+
+    .footer-main small {
+        font-size: 12px;
+        margin-top: 20px;
+    }
+    .footer-lines{
+    gap: 5px;
+    }
+    .footer-line {
+        font-size: 14px;
+    }
+
+    .footer-line-1 {
+        font-size: 14px;
+        margin-bottom: 0.5em;
+    }
+
+    .hiring {
+        width: 55px;
+        height: 20px;
+        font-size: 10px;
+    }
+
 }
 
 /* For Screen Size Less Than 481px (0 - 480px) */
@@ -1998,33 +2235,54 @@ ul {
         flex-direction: column;
         margin-top: .5em;
     }
- #contact {
-     padding: 1em 1em;
 
- }
- .contact-details {
-     width: 94%;
- }
+    #contact {
+        padding: 1em 1em;
 
- .contact-text {
-     font-size: 24px;
-     line-height: 35px;
- }
+    }
 
-.contact-email {
-    width: 260px;
-    height: 52px;
+    .contact-details {
+        width: 94%;
+    }
+
+    .contact-text {
+        font-size: 24px;
+        line-height: 35px;
+    }
+
+    .contact-email {
+        width: 260px;
+        height: 52px;
+    }
+
+    .contact-email::placeholder {
+        font-size: 16px;
+
+    }
+
+    .contact-submit {
+        width: 180px;
+        height: 54px;
+        margin-left: 0;
+        font-size: 19px;
+    }
+
+        .footer-container {
+            padding: 1em 1em;
+            flex-direction: column;
+            text-align: center;
+        }
+.footer-main {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.footer-second {
+    width: 90%;
+    margin-top: 2em;
 }
 
-.contact-email::placeholder {
-    font-size: 16px;
-
-}
-
-.contact-submit {
-    width: 180px;
-    height: 54px;
-    margin-left: 0;
-    font-size: 19px;
+.footer-line-career {
+    display: unset;
 }
 }
