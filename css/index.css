@@ -2172,8 +2172,8 @@ ul {
 
     .comments-tilte {
         width: 100%;
-        font-size: 40px;
-        line-height: 58px;
+        font-size: 35px;
+        line-height: 52px;
         letter-spacing: 2px;
 
     }
@@ -2235,7 +2235,10 @@ ul {
         flex-direction: column;
         margin-top: .5em;
     }
-
+.blog-title-2 {
+    font-family: var(--open-sans);
+    font-size: 25px;
+}
     #contact {
         padding: 1em 1em;
 
@@ -2275,7 +2278,7 @@ ul {
 .footer-main {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 75%;
 }
 .footer-second {
     width: 90%;
