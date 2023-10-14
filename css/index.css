@@ -1721,7 +1721,7 @@ ul {
 
     #main {
         height: max-content;
-        overflow: unset;
+        overflow: hidden;
         padding-top: 5em;
 
     }
